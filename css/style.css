@@ -55,18 +55,19 @@ a {
 .hero {
   background-color: #000814;
   color: white;
-  height: 500px;
+  height: 600px;
 }
 .hero nav {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .hero ul {
   display: flex;
+  list-style-type: none;
 }
 .hero li {
-  padding: 10px;
+  padding: 15px;
 }
 .hero a {
   color: white;
@@ -78,13 +79,15 @@ a {
   height: 100%;
   align-items: center;
   display: flex;
-  margin-top: 15px;
+  margin-top: 30px;
+  justify-content: center;
 }
 .hero img {
   width: 50%;
 }
 .hero h1 {
   font-size: 50px;
+  line-height: 1.2;
 }
 
 .m-1 {

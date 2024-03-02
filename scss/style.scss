@@ -32,26 +32,30 @@ a {
   // 2. nesting (dont forget about the ampersand (&) parent selector!)
   // 3. At-Rules
   @include set-bg($primary-color);
-  height: 500px;
+  height: 600px;
 
   nav {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    //changed to space-between, I had the wrong one selected(space-evenly)
   }
 
   ul {
     display: flex;
+    list-style-type: none;
+    // added from solution code, removes the styling type(the dots) from the list.
   }
 
   li {
-    padding: 10px;
+    padding: 15px;
+    // changed from 10px which I provided before to match acceptance criteria
   }
 
   a {
     color: text-color-picker($primary-color);
   }
-/// forgot about :hover, checked from solution code
+/// forgot about :hover, checked from solution code, hover is used for when your mouse goes over the element and changes the color
   a:hover {
     color: $secondary-color;
   }
@@ -60,7 +64,8 @@ a {
     height: 100%;
     align-items: center;
     display: flex;
-    margin-top: 15px;
+    margin-top: 30px;
+    justify-content: center;
   }
 
   img {
@@ -69,6 +74,8 @@ a {
 
   h1 {
     font-size: 50px;
+    line-height: 1.2;
+    /// Line height is from solution code. I understand it's used to set the distance between lines of text.
   }
 }
 

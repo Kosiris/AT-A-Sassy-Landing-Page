@@ -1,3 +1,6 @@
+@import "btnConfig";
+@import "utilities";
+@import "config";
 
 * {
   box-sizing: border-box;
@@ -43,6 +46,29 @@ a {
 
   li {
     padding: 10px;
+  }
+
+  a {
+    color: text-color-picker($primary-color);
+  }
+/// forgot about :hover, checked from solution code
+  a:hover {
+    color: $secondary-color;
+  }
+
+  &-content {
+    height: 100%;
+    align-items: center;
+    display: flex;
+    margin-top: 15px;
+  }
+
+  img {
+    width: 50%
+  }
+
+  h1 {
+    font-size: 50px;
   }
 }
 

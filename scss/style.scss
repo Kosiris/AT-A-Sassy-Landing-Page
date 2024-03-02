@@ -23,15 +23,8 @@ a {
 }
 
 .hero {
-  // This is where the bulk of the SCSS styling needs to be done
-
-  // Take a look at the other files we've built already. How can they be useful here?
-
-  // Also, take time to review the features of SCSS we've already covered:
-  // 1. $variables
-  // 2. nesting (dont forget about the ampersand (&) parent selector!)
-  // 3. At-Rules
   @include set-bg($primary-color);
+  /// we already have the set-bg mixin in our _utilities.scss so using include here we are using the mixin from that .scss file
   height: 600px;
 
   nav {
@@ -59,7 +52,7 @@ a {
   a:hover {
     color: $secondary-color;
   }
-
+/// - line 63 comment, the & is used with nested selectors and to reference parent selectors
   &-content {
     height: 100%;
     align-items: center;
